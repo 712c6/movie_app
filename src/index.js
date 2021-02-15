@@ -1,17 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
+  //index.html의 root div에 react로 작성한 모든 요소들을 넣어줌
+  //html에 코드를 작성하지 않기 때문에 동작 속도가 빨라진다.
+  //Virtual DOM(document object model)
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
